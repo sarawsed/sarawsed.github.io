@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICON LINK -->
+    <script
+      src="https://kit.fontawesome.com/4cb267163f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- ANIMATE LINK -->
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- START SPLASHSCREEN -->
+    <div
+      id="splash_screen"
+      class="splashscreen w-100 h-100 d-flex align-items-center justify-content-center position-fixed"
+    >
+      <div id="pre_loader" class="preloader position-relative">
+        <span id="preloader_text" class="preloader-text position-absolute"
+          >Loading...
+        </span>
+      </div>
+    </div>
+    <!-- END SPLASHSCREEN -->
+    <!-- START HEADER -->
+    <span id="go-up-id"></span>
+    <div class="hero-section-container w-100 position-relative" id="home">
+      <header class="header w-100 position-fixed bg-white" id="header">
+        <div
+          class="header-sec d-flex container align-items-center justify-content-between"
+        >
+          <a class="logo text-uppercase" href="#">sara</a>
+
+          <input type="checkbox" id="toggle-button" />
+
+          <label
+            for="toggle-button"
+            class="toggle-button-label d-inline-block d-xl-none position-relative"
+          >
+            <span></span>
+          </label>
+
+          <nav class="navigation-list d-xl-flex align-items-center pt-3">
+            <ul class="nav-links d-flex gap-xl-5 gap-3">
+              <li><a class="active nav-child" href="#home">Home</a></li>
+              <li><a href="#about" class="nav-child">About</a></li>
+              <li><a href="#skills" class="nav-child">Skills</a></li>
+              <li><a href="#portfolio" class="nav-child">Portfolio</a></li>
+              <li><a href="#testimonial" class="nav-child">Testimonial</a></li>
+              <li><a href="#contact" class="nav-child">Contact</a></li>
+              <!-- <div
+                id="dark_button"
+                class="dark_button d-flex flex-row align-items-center gap-2"
+              >
+                <span id="button_dark_text" class="text-uppercase">light</span>
+                <img id="button_dark_icon" src="assets/sun.svg" alt="moon" />
+              </div> -->
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <div class="go-up">
+      <a href="#" class="go-up-btn" id="go-up-btn" onclick="goup()">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+    <!-- END HEADER -->
+    <main>
+      <!-- START HEROSECTION -->
+      <section class="home">
+        <div
+          class="sec-home container position-relative d-flex flex-row-reverse align-items-center justify-content-between w-100 h-100"
+        >
+          <div
+            class="me-section col-md-6 col-12 d-flex flex-column justify-content-between mt-lg-5"
+          >
+            <span class="hi-box mt-4">Hi Everyone , I’m</span>
+            <h1 id="typing" class="typing mt-2">Sara Saeedi</h1>
+            <h2 class="mt-2">
+              A <span id="typing-effect" class="ps-1"></span>
+            </h2>
+          </div>
+          <div class="profile-box col-md-6 d-md-flex d-none position-absolute">
+            <div class="moving-shape">
+              <img src="./assets/hero.png" alt="profile" class="img-hero" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END HEROSECTION -->
+      <!-- START ABOUT -->
+      <section class="about" id="about">
+        <div class="sec-about container-lg mx-auto">
+          <div class="head-about mb-5 wow animate__pulse animate__animated">
+            <h3>About Me</h3>
+          </div>
+          <div
+            class="box-about container d-flex flex-nowrap flex-md-row flex-column-reverse position-relative h-100 w-100 mx-auto"
+          >
+            <div
+              class="text-about z-2 wow animate__animated animate__backInLeft animate__delay-2s"
+            >
+              <p>
+                Hi, I'm Sarah :D <br />
+                When I was looking for my favorite job among different job
+                titles, I came across programming. <br />
+                And after reading about its branches, I decided to choose
+                front-end programming. <br />you never know Maybe I will become
+                a full stack developer in the future :D
+              </p>
+            </div>
+            <div
+              class="about-profile z-2 position-relative wow animate__animated animate__backInRight animate__delay-1s"
+            >
+              <img
+                src="./assets/about.png"
+                alt="map"
+                class="img-about d-block"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END ABOUT -->
+      <!-- START SKILLS -->
+      <section id="skills" class="skills">
+        <div class="sec-skills container">
+          <h3 class="head-skills wow animate__pulse animate__animated">
+            Skills
+          </h3>
+          <div class="box-skills">
+            <div class="child-skill mb-4">
+              <h5>HTML</h5>
+              <div class="bar w-100 bg-light rounded-2">
+                <span class="pre html text-end">90%</span>
+              </div>
+            </div>
+            <div class="child-skill mb-4">
+              <h5>CSS</h5>
+              <div class="bar w-100 bg-light rounded-2">
+                <span class="pre css text-end">80%</span>
+              </div>
+            </div>
+            <div class="child-skill mb-4">
+              <h5>BOOTSTRAP</h5>
+              <div class="bar w-100 bg-light rounded-2">
+                <span class="pre bootstrap text-end">50%</span>
+              </div>
+            </div>
+            <div class="child-skill mb-4">
+              <h5>TAILWIND</h5>
+              <div class="bar w-100 bg-light rounded-2">
+                <span class="pre tailwind text-end">50%</span>
+              </div>
+            </div>
+            <div class="child-skill mb-4">
+              <h5>JAVASCRIPT</h5>
+              <div class="bar w-100 bg-light rounded-2">
+                <span class="pre javascript text-end">30%</span>
+              </div>
+            </div>
+            <div class="child-skill mb-4">
+              <h5>JQUERY</h5>
+              <div class="bar w-100 bg-light rounded-2">
+                <span class="pre jquery text-end">30%</span>
+              </div>
+            </div>
+          </div>
+          <div class="resume text-center mx-auto">
+            <a href="https://jobinja.ir/user/RJ-6416548" target="_blank"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- END SKILLS -->
+      <!-- START COUNTER -->
+      <section class="counter" id="counter">
+        <div
+          class="sec-counter container d-flex flex-row flex-wrap justify-content-md-between justify-content-evenly align-items-center align-content-center"
+        >
+          <div class="counter-box">
+            <span id="counter1">520</span>
+            <p>Awards</p>
+          </div>
+          <div class="counter-box">
+            <span id="counter2">683</span>
+            <p>Complete Projects</p>
+          </div>
+          <div class="counter-box">
+            <span id="counter3">680</span>
+            <p>Happy Customers</p>
+          </div>
+
+          <div class="counter-box">
+            <span id="counter4">925</span>
+            <p>Cups of coffee</p>
+          </div>
+        </div>
+      </section>
+      <!-- END COUNTER -->
+      <!-- START PORTFOLIO -->
+      <section id="portfolio" class="portfolio">
+        <div class="sec-portfolio container">
+          <h3 class="head-portfolio wow animate__pulse animate__animated">
+            Portfolio
+          </h3>
+          <div class="box-port w-100">
+            <div class="show-port">
+              <img
+                src="./assets/calc.png"
+                id="thumbnail"
+                alt="portfolio"
+                class="w-100 object-fit-cover"
+              />
+            </div>
+            <div
+              class="wrapper d-flex flex-row flex-wrap justify-content-center align-items-center"
+            >
+              <img src="./assets/typespeed.png" alt="" />
+              <img src="./assets/calc.png" alt="" />
+              <img src="./assets/slider.png" alt="" />
+              <img src="./assets/capcha.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PORTFOLIO -->
+      <!-- START TESTIMONIAL -->
+      <section id="testimonial" class="testimonial position-relative w-100">
+        <div
+          id="slider "
+          class="slider d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3
+            id="head-slide"
+            class="head-slide position-relative wow animate__pulse animate__animated"
+          >
+            Testimonial
+          </h3>
+
+          <section
+            id="slide-box"
+            class="slide-box d-flex align-items-center justify-content-center flex-column text-center position-relative"
+          >
+            <div class="image-box position-relative" id="image-box">
+              <img
+                src="./assets/profile-empty.png"
+                alt="profile"
+                class="img-slide w-100 h-100 object-fit-cover position-relative z-1"
+                id="img-slide"
+              />
+            </div>
+            <p class="review-slide" id="review-slide"></p>
+            <h3 class="name-slide" id="name-slide"></h3>
+            <p class="job-slide" id="job-slide"></p>
+            <div class="button-container">
+              <div class="navigations">
+                <button id="back-btn" class="border-0 bg-transparent">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-btn" class="border-0 bg-transparent">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- END TESTIMONIAL -->
+      <!-- START CONTACT -->
+      <section class="contact" id="contact">
+        <div class="sec-contact container-lg mx-auto">
+          <div class="head-contact mb-5 wow animate__pulse animate__animated">
+            <h3>Contact Me</h3>
+          </div>
+          <div
+            class="box-contact d-flex flex-wrap flex-column-reverse flex-lg-row align-items-center justify-content-start position-relative h-100 w-100 mx-auto"
+          >
+            <div
+              class="map z-2 position-relative wow animate__animated animate__backInLeft animate__delay-1s"
+            >
+              <img
+                src="./assets/mapedit.png"
+                alt="map"
+                class="image-map w-100 d-block"
+              />
+            </div>
+
+            <form
+              class="form-contact position-relative d-flex flex-row flex-wrap align-items-start justify-content-between z-2 wow animate__animated animate__backInRight animate__delay-2s"
+            >
+              <input type="text" placeholder="Your Name" class="name-form" />
+              <input type="email" placeholder="Your Email" class="email-form" />
+              <textarea
+                class="message-form"
+                placeholder="Your Message"
+              ></textarea>
+              <input
+                type="submit"
+                class="submit-form ms-md-auto"
+                value="Send"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- END CONTACT -->
+    </main>
+    <!-- START FOOTER -->
+    <footer class="footer" id="footer">
+      <section class="sec-end">
+        <div
+          class="sec-footer container d-flex flex-column flex-md-row align-items-center justify-content-between gap-4"
+        >
+          <div class="copyright text-center text-md-start">
+            Copyright © 2024
+            <strong
+              ><a href="https://github.com/sarawsed" target="_blank"
+                >Sara Saeedi</a
+              ></strong
+            >.All Rights Reserved
+          </div>
+          <div class="social-icons d-flex flex-row gap-4 align-items-center">
+            <a class="social" href="https://www.linkedin.com/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              class="social"
+              href="https://github.com/sarawsed"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="social" href="http://t.me/sarawsed" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- JS LINK -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

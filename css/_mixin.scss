@@ -1,0 +1,74 @@
+@import "./variables";
+
+//cv button
+@mixin cvButton($width: 20%, $height: $number_second * 10) {
+  width: $width;
+  height: $height;
+  line-height: $height;
+  border-radius: $number_second * 4;
+  border: 2px solid $hover_btn;
+  
+  &:hover {
+    color: $body_color;
+    background-color: #DFCCFB;
+    border-color: #DFCCFB;
+  }
+}
+
+//button
+@mixin button() {
+  display: inline-block;
+  color: $color_pastel;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 25px;
+  border: 2px solid $color_pastel;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    color: $body_color;
+    background-color: $hover_btn;
+    border-color: $hover_btn;
+  }
+}
+// HEADING
+@mixin heading($size: 58px, $color: $heading_color) {
+  color: $color;
+  font-size: $size;
+  font-weight: 800;
+  text-align: center;
+  user-select: none;
+  letter-spacing: 2px;
+  @media screen and (max-width: 992px) {
+    font-size: 48px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 300px) {
+    font-size: 16px;
+  }
+}
+//FORM
+@mixin form() {
+  padding-left: $number_second * 3;
+  font-size: $number * 2;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid $color_pastel;
+  border-radius: 3px;
+  &::placeholder {
+    color: $color_pastel;
+  }
+}
+//ICON
+@mixin icon($background: $color_fav, $font-Size: $number * 4) {
+  font-size: $font-Size;
+  color: $background;
+  &:hover {
+    color: $color_bg_hover;
+  }
+}
